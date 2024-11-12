@@ -2,9 +2,9 @@ const mysql = require('mysql2');
 
 const pool = mysql.createPool({
     host: process.env.HOST || 'localhost',
-    user: procces.env.USER || 'usuario',
-    password: procces.env.PASSWORD || 'senha',
-    database: procces.env.DATABASE || 'contatosBD',
+    user: process.env.USER || 'usuario',
+    password: process.env.PASSWORD || 'senha',
+    database: process.env.DATABASE || 'contatosBD',
     port: process.env.DB_PORT || 3306
 });
 
